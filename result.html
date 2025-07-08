@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" style="height: auto;">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0E9XK17NT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W0E9XK17NT');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bachelor of Commerce - April 2025 (Semester VI)</title>
+
+    <link href="favicon.ico" rel="icon">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme -->
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.css">
+</head>
+<body class="layout-top-nav" style="height: auto;">
+    <div class="wrapper">
+        <nav class="main-header navbar navbar-expand-md navbar-light navbar-dark" style="background-color: #005393;">
+            <div class="container justify-content-center">
+                <a href="#" class="navbar-brand">
+                    <span class="brand-text font-weight-light">
+                        <img src="logo.png" alt="Logo" class="brand-image" style="height: 50px;">
+                    </span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="content-wrapper" style="min-height: 515px;">
+            <div class="content-header">
+                <div class="container">
+                    <div class="row mb-2">
+                        <div class="col-sm-12">
+                            <h1 class="m-0"> Bachelor of Commerce - April 2025 (Semester VI)</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card" id="cardUG">
+                                <form id="marksForm">
+                                    <div class="card-body" id="UG">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="prNo">PR Number</label>
+                                                    <input type="text" class="form-control" id="prNo" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="seatNum">Seat Number</label>
+                                                    <input type="text" class="form-control" id="seatNum" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- Updated Back button -->
+                                        <a href="index.html" class="btn btn-secondary" style="background-color: #005393;">
+                                            <i class="fas fa-angle-left"></i>&nbsp;&nbsp;Back
+                                        </a>
+                                        <button type="button" class="btn btn-secondary float-right" style="background-color: #005393;" onclick="showMarks()">
+                                            <i class="fas fa-angle-double-down"></i>&nbsp;&nbsp;Get Result
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <div class="card-body" id="marksContainer">
+                                    <p><b>Name: </b>BRIGESH PANDURANG CHODANKAR</p>
+                                    <p><b>College: </b>Saraswat Vidyalaya's Sridora Caculo College of Commerce & Management Studies</p>
+                                    <p><b>Remark: </b></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Paper</th>
+                                                    <th>Total Marks</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr><td>UCEC104 International Economics</td><td>32</td><td>F</td></tr>
+                                                <tr><td>UCOC112 Human Resource Management</td><td>52</td><td>B</td></tr>
+                                                <tr><td>UCOD119 Financial Management II</td><td>47</td><td>C</td></tr>
+                                                <tr><td>UCOD123 Strategic Management</td><td>49</td><td>C</td></tr>
+                                                <tr><td>UCOD131 Brand Management</td><td>58</td><td>B+</td></tr>
+                                                <tr><td>UCOP101 COMMERCE (PROJECT)</td><td>80</td><td>A+</td></tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="text-danger" align="justify"><b>Disclaimer: The results published on this portal are for immediate information to the examinees. These cannot be treated as original mark sheets. Although that reasonable efforts are made to include accurate and up-to-date information, correctness of the data is to be verified with the actual result register sent to the college.</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-inline"></div>
+            <strong>Copyright © <script>document.write(new Date().getFullYear())</script> <a href="https://www.unigoa.ac.in/">Goa University</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+
+    <!-- REQUIRED SCRIPTS -->
+    <script src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://adminlte.io/themes/v3/dist/js/adminlte.js?v=3.2.0"></script>
+
+    <script type="text/javascript">
+        var json_file = 'BCOMAPR_2025VIRegular';
+    </script>
+    <script>
+        function showMarks() {
+            var prNo = document.getElementById('prNo').value;
+            var seatNum = document.getElementById('seatNum').value;
+
+            if (!prNo || !seatNum) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            var marksContainer = document.getElementById('marksContainer');
+            marksContainer.innerHTML = '<p>Fetching Result...</p>';
+
+            fetch('serve_json.php?pr_no=' + encodeURIComponent(prNo) + '&seat_num=' + encodeURIComponent(seatNum) + '&file_name=' + json_file + '.json')
+                .then(response => response.json())
+                .then(data => {
+                    var filteredData = data.filter(function(item) {
+                        return item.pr_no === prNo && item.seat_no === seatNum;
+                    });
+
+                    marksContainer.innerHTML = '';
+
+                    if (filteredData.length > 0) {
+                        var studentDetails = `
+                            <p><b>Name: </b>${filteredData[0].full_name}</p>
+                            <p><b>College: </b>${filteredData[0].college_name}</p>
+                            <p><b>Remark: </b>${filteredData[0].remark}</p>`;
+
+                        var tableHeader = `<div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Paper</th>
+                                        <th>Total Marks</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>`;
+
+                        var tableBody = ``;
+
+                        for (let i = 1; i <= 8; i++) {
+                            if (filteredData[0][`paper_name${i}`] && filteredData[0][`paper_marks${i}`] !== undefined) {
+                                tableBody += `<tr>
+                                    <td>${filteredData[0][`paper_name${i}`]}</td>
+                                    <td>${filteredData[0][`paper_marks${i}`]}</td>
+                                    <td>${filteredData[0][`paper_grade${i}`]}</td>
+                                </tr>`;
+                            }
+                        }
+
+                        var tableFooter = `</tbody>
+                            </table>
+                            <p class="text-danger" align="justify"><b>Disclaimer: The results published on this portal are for immediate information to the examinees. These cannot be treated as original mark sheets. Although that reasonable efforts are made to include accurate and up-to-date information, correctness of the data is to be verified with the actual result register sent to the college.</b></p>
+                        </div>`;
+
+                        marksContainer.innerHTML = studentDetails + tableHeader + tableBody + tableFooter;
+                    } else {
+                        marksContainer.innerHTML = '<div class="alert alert-danger">No data found for the given PR Number and Seat number.</div>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    document.getElementById('marksContainer').innerHTML = '<div class="alert alert-danger">Error fetching data.</div>';
+                });
+        }
+    </script>
+</body>
+</html>

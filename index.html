@@ -1,0 +1,94 @@
+<!-- index.html (Main page with form input) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bachelor of Commerce - April 2025 (Semester VI)</title>
+    <link href="favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.css">
+</head>
+<body class="hold-transition layout-top-nav">
+    <div class="wrapper">
+        <nav class="main-header navbar navbar-expand-md navbar-light navbar-dark" style="background-color: #005393;">
+            <div class="container justify-content-center">
+                <a href="#" class="navbar-brand">
+                    <span class="brand-text font-weight-light">
+                        <img src="logo.png" alt="Logo" class="brand-image" style="height: 50px;">
+                    </span>
+                </a>
+            </div>
+        </nav>
+        <div class="content-wrapper">
+            <div class="content-header">
+                <div class="container">
+                    <div class="row mb-2">
+                        <div class="col-sm-12">
+                            <h1 class="m-0"> Bachelor of Commerce - April 2025 (Semester VI)</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card" id="cardUG">
+                                <form id="marksForm">
+                                    <div class="card-body" id="UG">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="prNo">PR Number</label>
+                                                    <input type="text" class="form-control" id="prNo" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="seatNum">Seat Number</label>
+                                                    <input type="text" class="form-control" id="seatNum" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- Back Button -->
+    <button type="button" class="btn btn-secondary" style="background-color: #005393;" onclick="goBack()">
+        <i class="fas fa-angle-left"></i>&nbsp;&nbsp;Back
+    </button>
+                                        <button type="button" class="btn btn-secondary float-right" style="background-color: #005393;" onclick="redirectIfValid()"><i class="fas fa-angle-double-down"></i>&nbsp;&nbsp;Get Result</button>
+                                    </div>
+                                </form>
+                                <div class="card-body">
+                                    <p class="text-danger" align="justify"><b>Disclaimer: The results published on this portal are for immediate information to the examinees. These cannot be treated as original mark sheets. Although that reasonable efforts are made to include accurate and up-to-date information, correctness of the data is to be verified with the actual result register sent to the college.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <strong>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.unigoa.ac.in/">Goa University</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function redirectIfValid() {
+            var pr = document.getElementById("prNo").value.trim();
+            var seat = document.getElementById("seatNum").value.trim();
+            if (pr === "202210511" && seat === "24282") {
+                window.location.href = "result.html";
+            } else {
+                alert("No result found for given PR Number and Seat Number.");
+            }
+        }
+                function goBack() {
+            window.location.href = "https://www.unigoa.ac.in/results/index.php#";
+        }
+    </script>
+</body>
+</html>
